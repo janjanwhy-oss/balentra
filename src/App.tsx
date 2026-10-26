@@ -3,13 +3,18 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { ArrowUpRight, ArrowLeft, ArrowRight, ChevronLeft, ChevronRight, Quote, X, Check, Globe, ShieldCheck, FileSpreadsheet, Scale, UserPlus, Search, Send } from 'lucide-react';
 import { motion, AnimatePresence, useReducedMotion } from 'motion/react';
 import { Navbar, NavItem } from './components/Navbar';
 import { Footer } from './components/Footer';
-import { ServicesPage } from './pages/ServicesPage';
-import { ServiceDetailPage } from './pages/ServiceDetailPage';
+
+const ServicesPage = lazy(() =>
+  import('./pages/ServicesPage').then((m) => ({ default: m.ServicesPage }))
+);
+const ServiceDetailPage = lazy(() =>
+  import('./pages/ServiceDetailPage').then((m) => ({ default: m.ServiceDetailPage }))
+);
 import {
   SERVICE_DETAILS_BY_SLUG,
   SERVICE_DETAILS_LIST,
@@ -555,36 +560,40 @@ export default function App() {
   return (
     <div className="relative min-h-screen w-full bg-[#0A0A0C] text-[#F5F5F3] font-sans overflow-x-hidden">
       {activeServiceDetail ? (
-        <ServiceDetailPage
-          service={activeServiceDetail}
-          currentPath={normalizedPath}
-          onNavigateHomeSection={navigateToHomeSection}
-          onNavigateServices={navigateToServices}
-          onOpenConsultation={(defaultService) => {
-            if (defaultService) {
-              setFormData((prev) => ({
-                ...prev,
-                inquiry: `Inquiry regarding ${defaultService}: `,
-              }));
-            }
-            resetConsultationModal();
-          }}
-        />
+        <Suspense fallback={<div className="min-h-screen bg-[#FFFFFF]" />}>
+          <ServiceDetailPage
+            service={activeServiceDetail}
+            currentPath={normalizedPath}
+            onNavigateHomeSection={navigateToHomeSection}
+            onNavigateServices={navigateToServices}
+            onOpenConsultation={(defaultService) => {
+              if (defaultService) {
+                setFormData((prev) => ({
+                  ...prev,
+                  inquiry: `Inquiry regarding ${defaultService}: `,
+                }));
+              }
+              resetConsultationModal();
+            }}
+          />
+        </Suspense>
       ) : isServicesOverviewRoute || activeServiceSlug ? (
-        <ServicesPage
-          currentPath="/services"
-          onNavigateHomeSection={navigateToHomeSection}
-          onNavigateServices={navigateToServices}
-          onOpenConsultation={(defaultService) => {
-            if (defaultService) {
-              setFormData((prev) => ({
-                ...prev,
-                inquiry: `Inquiry regarding ${defaultService}: `,
-              }));
-            }
-            resetConsultationModal();
-          }}
-        />
+        <Suspense fallback={<div className="min-h-screen bg-[#FFFFFF]" />}>
+          <ServicesPage
+            currentPath="/services"
+            onNavigateHomeSection={navigateToHomeSection}
+            onNavigateServices={navigateToServices}
+            onOpenConsultation={(defaultService) => {
+              if (defaultService) {
+                setFormData((prev) => ({
+                  ...prev,
+                  inquiry: `Inquiry regarding ${defaultService}: `,
+                }));
+              }
+              resetConsultationModal();
+            }}
+          />
+        </Suspense>
       ) : (
         <>
           {/* FULL-SCREEN HERO SECTION */}
