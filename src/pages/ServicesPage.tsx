@@ -421,7 +421,7 @@ export function ServicesPage({
   };
 
   return (
-    <div className="relative min-h-screen w-full bg-[#FFFFFF] text-[#101114] font-sans overflow-x-hidden select-none">
+    <div className="relative min-h-screen w-full bg-[#FFFFFF] text-[#101114] font-sans overflow-x-hidden">
       {/* SECTION 1 — CENTERED CINEMATIC HERO WITH FLOATING CUSTOM-CUT NAVBAR */}
       <section
         id="services-hero"

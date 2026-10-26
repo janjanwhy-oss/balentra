@@ -144,7 +144,7 @@ export function ServiceDetailPage({
   return (
     <div
       key={service.slug}
-      className="relative min-h-screen w-full bg-[#FFFFFF] text-[#101114] font-sans overflow-x-hidden select-none"
+      className="relative min-h-screen w-full bg-[#FFFFFF] text-[#101114] font-sans overflow-x-hidden"
     >
       {/* SECTION 1 — PREMIUM ASYMMETRIC HERO */}
       <section

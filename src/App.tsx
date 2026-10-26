@@ -375,16 +375,51 @@ export default function App() {
     inquiry: '',
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [modalSubmitting, setModalSubmitting] = useState(false);
+  const [modalError, setModalError] = useState('');
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.fullName.trim() || !formData.workEmail.trim()) return;
-    setFormSubmitted(true);
+    setModalSubmitting(true);
+    setModalError('');
+    try {
+      const response = await fetch('/api/inquiries', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fullName: formData.fullName.trim(),
+          businessEmail: formData.workEmail.trim(),
+          companyName: formData.company.trim() || 'Balentra Client',
+          serviceRequired: 'Business Advisory',
+          message:
+            formData.inquiry.trim().length >= 10
+              ? formData.inquiry.trim()
+              : `Executive consultation request for jurisdiction: ${formData.jurisdiction}.`,
+        }),
+      });
+      const data = await response.json().catch(() => null);
+      if (response.ok && data?.ok) {
+        setFormSubmitted(true);
+      } else {
+        setModalError(
+          data?.error ||
+            'Unable to submit your consultation request at this time. Please try again.'
+        );
+      }
+    } catch {
+      setModalError(
+        'Unable to connect to the inquiry service. Please check your connection and try again.'
+      );
+    } finally {
+      setModalSubmitting(false);
+    }
   };
 
   const resetConsultationModal = () => {
     setActiveModal('consultation');
     setFormSubmitted(false);
+    setModalError('');
   };
 
   // Contact Us / Inquiry section state
@@ -518,7 +553,7 @@ export default function App() {
     : null;
 
   return (
-    <div className="relative min-h-screen w-full bg-[#0A0A0C] text-[#F5F5F3] font-sans overflow-x-hidden select-none">
+    <div className="relative min-h-screen w-full bg-[#0A0A0C] text-[#F5F5F3] font-sans overflow-x-hidden">
       {activeServiceDetail ? (
         <ServiceDetailPage
           service={activeServiceDetail}
@@ -3317,12 +3352,19 @@ export default function App() {
                     />
                   </div>
 
+                  {modalError && (
+                    <div className="p-3.5 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-xs leading-relaxed">
+                      {modalError}
+                    </div>
+                  )}
+
                   <button
                     type="submit"
-                    className="group w-full inline-flex items-center justify-center gap-2 pt-2 cursor-pointer"
+                    disabled={modalSubmitting}
+                    className="group w-full inline-flex items-center justify-center gap-2 pt-2 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     <span className="flex-1 h-[46px] rounded-full bg-white text-[#141416] font-semibold text-sm inline-flex items-center justify-center transition-shadow duration-[280ms]">
-                      Confirm Consultation Request
+                      {modalSubmitting ? 'Transmitting Request...' : 'Confirm Consultation Request'}
                     </span>
                     <span className="w-[46px] h-[46px] rounded-full bg-[#FF6438] text-white inline-flex items-center justify-center shrink-0 transition-all duration-[280ms] group-hover:bg-[#19191D] group-hover:ring-1 group-hover:ring-white/25">
                       <ArrowUpRight className="w-[18px] h-[18px] text-white transition-all duration-[280ms] group-hover:text-[#FF6438] group-hover:translate-x-[3px] group-hover:-translate-y-[3px]" />
