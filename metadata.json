@@ -1,0 +1,6 @@
+{
+  "name": "Balentra Accounting",
+  "description": "International accounting, tax compliance, reporting, and strategic advisory tailored for global enterprises.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

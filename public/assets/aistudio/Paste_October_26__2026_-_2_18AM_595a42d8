@@ -1,0 +1,881 @@
+# BALENTRA — BUILD SIX PREMIUM SERVICE PAGES + CONNECT ALL NAVIGATION
+
+We are continuing the existing Balentra Accounting multi-page website.
+
+The homepage and main Services Overview page have already been designed.
+
+Your task is to:
+
+1. Build SIX complete individual service-detail pages.
+2. Create one consistent, premium reusable service-page design system.
+3. Add a functional Services dropdown to the existing header.
+4. Connect all service links across the website to their correct pages.
+5. Preserve every approved design and existing section.
+
+IMPORTANT: No new reference images are attached for these individual service pages. Use the EXISTING BALENTRA WEBSITE itself as the design reference.
+
+Do not start a new visual identity.
+
+---
+
+# PART 1 — EXISTING BALENTRA BRAND IDENTITY
+
+Preserve the following:
+
+Primary accent: Electric Orange #FF6438
+
+Primary dark: Charcoal #101114
+
+Backgrounds:
+- Pure white #FFFFFF
+- Soft off-white #FAFAF9
+- Dark charcoal for selected sections
+
+Typography:
+- Existing editorial serif heading font
+- Existing modern sans-serif body font
+
+Visual character:
+- Premium
+- International
+- Sophisticated
+- Minimalist
+- Editorial
+- Clean layouts
+- Carefully restrained animations
+
+Reuse the existing:
+- Balentra logo
+- Floating custom-cut white navigation bar
+- Button designs
+- Hover effects
+- Header navigation spacing
+- Global typography
+- Minimalist footer
+
+Never replace the existing navbar with a conventional full-width header.
+
+Avoid generic accounting website templates, large icon grids, unnecessary gradients, stock-looking illustrations, or excessive cards.
+
+---
+
+# PART 2 — MASTER SERVICE-DETAIL PAGE DESIGN
+
+Use this same underlying design system across all SIX service pages.
+
+Every page must contain these sections in this order:
+
+1. Premium asymmetric hero
+2. Service overview
+3. What the service includes
+4. Detailed service showcase
+5. How Balentra works
+6. Who this service is for
+7. Service-specific FAQs
+8. Consultation CTA
+9. Existing shared footer
+
+Although the underlying structure is consistent, every page must have unique headings, descriptions, service content, photographs, and FAQ answers.
+
+Do not simply duplicate the exact same text across pages.
+
+## SECTION 1 — ASYMMETRIC HERO
+
+Create a premium, editorial, two-column hero.
+
+DESKTOP:
+- Clean soft off-white background.
+- Left column: approximately 55%.
+- Right column: approximately 45%.
+- Hero height: approximately 580–650px, depending on content.
+- Keep the existing floating Balentra navbar at the top.
+- Leave adequate clearance beneath the floating navbar.
+
+LEFT CONTENT:
+- Small Electric Orange eyebrow.
+- Breadcrumb: Home / Services / Current Service.
+- Large elegant serif H1.
+- Short supporting paragraph.
+- Primary CTA: Book a Consultation.
+- Secondary text link: View All Services.
+
+RIGHT CONTENT:
+- One prominent, realistic premium corporate photograph.
+- Use Balentra's established stepped/notched rounded-corner image treatment.
+- The image should feel architectural and editorial rather than like an ordinary rectangular card.
+- No text baked into the image.
+- No floating generic financial icons.
+
+IMAGE GENERATION/SELECTION:
+Use a distinct, appropriate premium photograph for each service. Source suitable properly licensed images or use the project's supported image-generation mechanism. Do not use broken URLs, fake image files, or unrelated photography.
+
+Use natural lighting, genuine professional environments, subtle warm tones, restrained composition, and consistent color grading.
+
+## SECTION 2 — SERVICE OVERVIEW
+
+Background: white.
+
+Create an elegant two-column editorial layout.
+
+LEFT:
+Small section label — THE OVERVIEW
+
+Large heading explaining the value of the service.
+
+RIGHT:
+Two concise paragraphs explaining the service, its practical role, and how it helps the relevant business.
+
+Below the content, include one thin horizontal divider.
+
+Avoid generic statistics, fabricated certifications, and unverified claims.
+
+## SECTION 3 — WHAT'S INCLUDED
+
+Background: #FAFAF9.
+
+Eyebrow:
+WHAT'S INCLUDED
+
+Heading:
+What's Included in This Service.
+
+Display FOUR meaningful service deliverables in a spacious editorial list.
+
+For each deliverable:
+- Small orange number, 01–04.
+- Medium-sized bold heading.
+- Concise explanation.
+- Thin horizontal line.
+
+Desktop:
+Two-column or full-width editorial row composition, whichever best preserves the visual hierarchy.
+
+Mobile:
+Simple stacked list.
+
+Do not use generic icon cards.
+
+## SECTION 4 — SIGNATURE SERVICE SHOWCASE
+
+This should be the distinctive visual section of the individual page.
+
+Use an elegant split-screen layout inspired by the large-image treatment already established on the main Services Overview page.
+
+LEFT:
+One large photographic panel with stepped/notched rounded corners.
+
+RIGHT:
+- Small orange eyebrow.
+- Service-specific editorial heading.
+- Short supporting paragraph.
+- Three compact functional tabs.
+
+Tabs:
+PROCESS / DELIVERABLES / SUPPORT
+
+Each tab must reveal relevant, genuinely different content.
+
+Keep the tabs small, elegant, and understated.
+
+Use the Balentra accent orange only for the active tab.
+
+Use a 250–350ms content transition.
+
+Every tab must work with mouse, keyboard, and touch.
+
+No unnecessary full-screen animations.
+
+## SECTION 5 — HOW WE WORK
+
+Background: white.
+
+Create a restrained three-stage process layout.
+
+Eyebrow:
+OUR PROCESS
+
+Heading:
+How We Work With You.
+
+Steps:
+
+01 — Understand
+Review business requirements, existing workflows, and the agreed scope of support.
+
+02 — Set Up
+Organize the relevant records, processes, reporting expectations, and necessary financial tools.
+
+03 — Support
+Deliver the agreed recurring work, reporting, and communication.
+
+Use one continuous thin connecting line and three compact numbered nodes.
+
+Adapt the explanatory text to the service.
+
+Do not add large boxes, decorative waves, or excessive graphics.
+
+## SECTION 6 — WHO THIS SERVICE IS FOR
+
+Background: soft off-white.
+
+A compact editorial section with:
+- Large serif heading on the left.
+- Four suitable business types or business situations on the right.
+- Thin lines separating the items.
+- Small orange numbering.
+
+Keep this section informative, not unnecessarily tall.
+
+## SECTION 7 — SERVICE FAQs
+
+Background: white.
+
+Heading:
+Frequently Asked Questions.
+
+Add FOUR service-specific questions and useful answers.
+
+Use the existing Balentra accordion interaction:
+
+- All questions closed initially.
+- Clicking expands the answer.
+- Only one answer can be open at a time.
+- Clicking the open question closes it.
+- Small orange plus/minus indicators.
+- Thin dividers.
+- Smooth height transitions.
+
+Answers should be accurate and should not imply guaranteed results, unrestricted international regulatory coverage, or services outside the agreed scope.
+
+## SECTION 8 — PREMIUM CONSULTATION CTA
+
+Reuse Balentra's established dark CTA styling.
+
+Background: #101114.
+
+Layout:
+- Left-aligned large white headline.
+- Concise supporting text.
+- White pill-shaped consultation button with the existing orange arrow treatment.
+- Secondary link: Explore All Services.
+
+Use the appropriate service-specific CTA heading.
+
+Keep the CTA compact.
+
+Do not regenerate the entire homepage CTA photo cluster on every individual service page.
+
+## SECTION 9 — SHARED FOOTER
+
+Reuse the existing minimalist white Balentra footer without redesigning it.
+
+---
+
+# PART 3 — CREATE THE SIX INDIVIDUAL PAGES
+
+Use the following EXACT canonical routes and content directions.
+
+## PAGE 01 — BOOKKEEPING & ACCOUNTING
+
+ROUTE:
+/services/bookkeeping-accounting
+
+HERO EYEBROW:
+SERVICE 01 / 06
+
+H1:
+Bookkeeping That Keeps You Moving.
+
+HERO DESCRIPTION:
+Accurate financial records, organized processes, and dependable bookkeeping support designed around your everyday business operations.
+
+OVERVIEW HEADING:
+A Stronger Foundation for Every Financial Decision.
+
+OVERVIEW CONTENT:
+Reliable bookkeeping helps businesses understand transactions, maintain consistent records, and prepare meaningful financial reports. Balentra supports the ongoing organization and reconciliation of accounting information so teams can work with clearer financial data.
+
+FOUR DELIVERABLES:
+01 — Transaction Recording
+Organized recording and categorization of business transactions.
+
+02 — Bank & Account Reconciliation
+Regular comparison of recorded transactions with relevant account statements.
+
+03 — General Ledger Management
+Structured maintenance and review of financial ledger records.
+
+04 — Month-End Accounting Support
+Period-end organization, reconciliations, and preparation for reporting.
+
+SIGNATURE SHOWCASE HEADING:
+Organized Books. Clearer Business Decisions.
+
+SHOWCASE TABS:
+PROCESS — Recording, categorization, and reconciliation.
+DELIVERABLES — Organized ledgers, reconciliations, and period-end records.
+SUPPORT — Ongoing bookkeeping coordination and review within the agreed scope.
+
+WHO IT'S FOR:
+Startups, Small & Medium Businesses, E-commerce Companies, Agencies & Service Businesses.
+
+FAQ QUESTIONS:
+- What information do you need to begin bookkeeping?
+- Can Balentra help organize existing financial records?
+- How frequently can bookkeeping be updated?
+- Can bookkeeping work with our existing accounting software?
+
+CTA HEADING:
+Let's Get Your Books in Order.
+
+PHOTOGRAPHY:
+Premium modern desk with financial records, a professional accountant working, neatly arranged paperwork, and natural office lighting.
+
+---
+
+## PAGE 02 — FINANCIAL REPORTING & ANALYSIS
+
+ROUTE:
+/services/financial-reporting
+
+HERO EYEBROW:
+SERVICE 02 / 06
+
+H1:
+See the Numbers.
+Understand the Bigger Picture.
+
+HERO DESCRIPTION:
+Clear financial reports and practical analysis that help you understand performance, identify trends, and plan with greater confidence.
+
+OVERVIEW HEADING:
+Make Financial Information More Meaningful.
+
+OVERVIEW CONTENT:
+Financial information becomes more useful when it is organized into understandable reports and connected to business performance. Balentra helps prepare and analyze financial information for management review, planning, and operational visibility.
+
+FOUR DELIVERABLES:
+01 — Financial Statements
+Preparation and organization of relevant financial statements.
+
+02 — Management Reporting
+Structured reports tailored to agreed business performance indicators.
+
+03 — Cash Flow Analysis
+Visibility into historical cash movements and relevant forecasts.
+
+04 — Budget & Variance Analysis
+Comparison of actual results against budgets and expectations.
+
+SIGNATURE SHOWCASE HEADING:
+From Financial Data to Practical Insight.
+
+SHOWCASE TABS:
+PROCESS — Organizing financial data and reporting requirements.
+DELIVERABLES — Statements, management reports, and financial analysis.
+SUPPORT — Recurring reporting and financial review coordination.
+
+WHO IT'S FOR:
+Growing SMEs, SaaS Businesses, Agency Owners, Management Teams.
+
+FAQ QUESTIONS:
+- Which financial reports can Balentra prepare?
+- How often can management reports be produced?
+- Can reports be tailored to our business KPIs?
+- Can Balentra help us understand cash flow trends?
+
+CTA HEADING:
+Bring Clarity to Your Financial Performance.
+
+PHOTOGRAPHY:
+Premium professional financial analysis workspace, printed reports, charts, a financial analyst, and modern architectural office details.
+
+---
+
+## PAGE 03 — PAYROLL MANAGEMENT & COORDINATION
+
+ROUTE:
+/services/payroll
+
+HERO EYEBROW:
+SERVICE 03 / 06
+
+H1:
+Payroll Processes.
+Better Organized.
+
+HERO DESCRIPTION:
+Structured payroll administration, organized employee payment information, and reliable payroll reporting support.
+
+OVERVIEW HEADING:
+A More Structured Approach to Payroll Administration.
+
+OVERVIEW CONTENT:
+Payroll requires accurate information, dependable recurring workflows, and clear coordination. Balentra supports payroll-related financial administration, records, reconciliation, and reporting according to the agreed service scope and relevant local provider arrangements where applicable.
+
+FOUR DELIVERABLES:
+01 — Payroll Data Preparation
+Organizing relevant employee and compensation information.
+
+02 — Payroll Records
+Maintaining structured payroll-related payment and accounting records.
+
+03 — Payroll Reconciliation
+Reviewing payroll transactions against relevant financial records.
+
+04 — Payroll Reporting Coordination
+Supporting payroll-related reporting and coordination with applicable specialists or providers.
+
+SIGNATURE SHOWCASE HEADING:
+Less Administrative Complexity. More Financial Order.
+
+SHOWCASE TABS:
+PROCESS — Payroll information collection and review.
+DELIVERABLES — Organized records, reconciliations, and reporting support.
+SUPPORT — Recurring payroll administration coordination.
+
+WHO IT'S FOR:
+Growing Teams, SMEs, Agencies, Distributed Businesses.
+
+FAQ QUESTIONS:
+- What payroll information is required to begin?
+- Can Balentra coordinate with our existing payroll provider?
+- Can payroll-related records be reconciled with our accounts?
+- Do payroll services vary by country and service scope?
+
+CTA HEADING:
+Let's Simplify Your Payroll Administration.
+
+PHOTOGRAPHY:
+Modern payroll administration office, professional finance specialist, laptop, organized documents, natural light, and a restrained corporate atmosphere.
+
+IMPORTANT:
+Do not promise payroll tax filings, statutory compliance, or local payroll processing in every country without verified service scope.
+
+---
+
+## PAGE 04 — ACCOUNTS PAYABLE & RECEIVABLE
+
+ROUTE:
+/services/accounts-payable-receivable
+
+HERO EYEBROW:
+SERVICE 04 / 06
+
+H1:
+Better Control Over Money In and Out.
+
+HERO DESCRIPTION:
+Organized invoicing, payment tracking, and financial administration that help businesses manage everyday receivables and payables.
+
+OVERVIEW HEADING:
+Bring Structure to Every Payment Cycle.
+
+OVERVIEW CONTENT:
+Consistent management of supplier bills, customer invoices, and outstanding balances supports stronger financial visibility. Balentra helps businesses organize payment-related processes and track relevant financial information.
+
+FOUR DELIVERABLES:
+01 — Customer Invoicing
+Preparing and organizing invoices according to established procedures.
+
+02 — Accounts Receivable Tracking
+Maintaining visibility over open customer balances and payment status.
+
+03 — Vendor Bill Administration
+Recording, organizing, and reviewing supplier bills.
+
+04 — Payment Reconciliation & Reporting
+Tracking and reconciling relevant payment activity and balances.
+
+SIGNATURE SHOWCASE HEADING:
+Every Invoice Accounted For.
+
+SHOWCASE TABS:
+PROCESS — Invoice capture, organization, and tracking.
+DELIVERABLES — Payables and receivables records, status reports, and reconciliations.
+SUPPORT — Recurring financial administration and coordination.
+
+WHO IT'S FOR:
+E-commerce, Retail, Professional Services, Growing SMEs.
+
+FAQ QUESTIONS:
+- Can Balentra manage both payables and receivables?
+- How can outstanding invoices be monitored?
+- Can you work with our existing invoicing system?
+- What approvals are needed for supplier payments?
+
+CTA HEADING:
+Take Control of Your Payment Workflows.
+
+PHOTOGRAPHY:
+Elegant editorial financial operations desk, professional reviewing invoices and supplier documents, refined modern office environment.
+
+IMPORTANT:
+Do not imply Balentra can authorize or execute payments without an agreed authorization process.
+
+---
+
+## PAGE 05 — FRACTIONAL CFO & FINANCIAL ADVISORY
+
+ROUTE:
+/services/fractional-cfo
+
+HERO EYEBROW:
+SERVICE 05 / 06
+
+H1:
+Financial Perspective for What's Next.
+
+HERO DESCRIPTION:
+Practical financial planning, forecasting, and performance analysis to support informed business decisions.
+
+OVERVIEW HEADING:
+Strategic Financial Insight Without a Full-Time Appointment.
+
+OVERVIEW CONTENT:
+Growing businesses often need a clearer financial perspective as decisions become more complex. Balentra provides advisory and analysis support focused on budgeting, cash flow planning, profitability, and agreed financial performance measures.
+
+FOUR DELIVERABLES:
+01 — Budgeting & Forecasting
+Structured financial plans, assumptions, and forecasts.
+
+02 — Cash Flow Planning
+Reviewing relevant cash flow expectations and planning scenarios.
+
+03 — Financial Performance Analysis
+Reviewing margins, trends, and relevant financial indicators.
+
+04 — Management Decision Support
+Preparing financial information and analysis for business planning discussions.
+
+SIGNATURE SHOWCASE HEADING:
+Make the Next Decision With Greater Clarity.
+
+SHOWCASE TABS:
+PROCESS — Financial discovery and business planning priorities.
+DELIVERABLES — Forecasts, financial analyses, and management insights.
+SUPPORT — Agreed recurring advisory and financial review sessions.
+
+WHO IT'S FOR:
+Founders, Scaling Startups, Business Owners, Leadership Teams.
+
+FAQ QUESTIONS:
+- What is a fractional CFO service?
+- How is fractional CFO support different from bookkeeping?
+- Can Balentra assist with budgeting and forecasting?
+- How frequently can advisory sessions take place?
+
+CTA HEADING:
+Plan Your Next Stage With Confidence.
+
+PHOTOGRAPHY:
+Sophisticated executive office, senior professionals reviewing financial forecasts and business plans around a modern boardroom table.
+
+IMPORTANT:
+Do not invent executive credentials or imply regulated investment advice.
+
+---
+
+## PAGE 06 — CLOUD ACCOUNTING & FINANCE SYSTEMS
+
+ROUTE:
+/services/cloud-accounting
+
+HERO EYEBROW:
+SERVICE 06 / 06
+
+H1:
+Smarter Systems.
+Clearer Financial Workflows.
+
+HERO DESCRIPTION:
+Cloud accounting setup and practical workflow improvements to help businesses organize financial data and reduce unnecessary manual processes.
+
+OVERVIEW HEADING:
+Build a More Connected Finance Function.
+
+OVERVIEW CONTENT:
+Modern accounting systems can make financial information easier to organize and access when configured around real business requirements. Balentra supports suitable system setup, data organization, and finance workflow improvements.
+
+FOUR DELIVERABLES:
+01 — Accounting System Setup
+Initial configuration of suitable accounting platforms.
+
+02 — Data Migration Support
+Assistance organizing and transferring relevant financial records.
+
+03 — Workflow Improvements
+Identifying opportunities to streamline recurring accounting activities.
+
+04 — System Guidance & Training
+Practical guidance for approved financial workflows and day-to-day use.
+
+SIGNATURE SHOWCASE HEADING:
+Modern Tools. More Organized Finances.
+
+SHOWCASE TABS:
+PROCESS — Reviewing systems, data, and process requirements.
+DELIVERABLES — Configurations, organized data, and improved workflows.
+SUPPORT — Practical system guidance and agreed ongoing assistance.
+
+WHO IT'S FOR:
+Digital Businesses, Startups, E-commerce Companies, Growing SMEs.
+
+FAQ QUESTIONS:
+- Can Balentra work with our existing accounting system?
+- Can you assist with moving records to a new platform?
+- Do you provide accounting software training?
+- Can financial workflows be improved without replacing our existing software?
+
+CTA HEADING:
+Let's Improve Your Accounting Systems.
+
+PHOTOGRAPHY:
+Minimal premium digital finance office with modern laptop, financial software interface, subtle natural light, and clean architectural surroundings.
+
+IMPORTANT:
+Do not invent official software partnerships or certifications.
+
+---
+
+# PART 4 — ADD SERVICES DROPDOWN TO EXISTING HEADER
+
+Modify ONLY the behavior necessary for the existing Services navigation item.
+
+Keep the approved floating white custom-cut navbar's shape, layout, positioning, proportions, typography, and responsiveness.
+
+The dropdown must feel integrated into the existing Balentra navigation design.
+
+## HEADER STRUCTURE
+
+Services
+  - View All Services
+  - Bookkeeping & Accounting
+  - Financial Reporting & Analysis
+  - Payroll Management & Coordination
+  - Accounts Payable & Receivable
+  - Fractional CFO & Financial Advisory
+  - Cloud Accounting & Finance Systems
+
+Use EXACT routes:
+
+View All Services → /services
+Bookkeeping & Accounting → /services/bookkeeping-accounting
+Financial Reporting & Analysis → /services/financial-reporting
+Payroll Management & Coordination → /services/payroll
+Accounts Payable & Receivable → /services/accounts-payable-receivable
+Fractional CFO & Financial Advisory → /services/fractional-cfo
+Cloud Accounting & Finance Systems → /services/cloud-accounting
+
+## DROPDOWN DESIGN
+
+- White dropdown panel.
+- Refined, restrained rounded corners.
+- Subtle shadow.
+- Compact spacing.
+- Small orange arrow or active indicator.
+- Thin dividers only where necessary.
+- Do not create a full-screen mega menu.
+- Do not modify the surrounding navbar geometry.
+
+DESKTOP INTERACTION:
+- The Services label remains a normal link to /services.
+- Add a separate small chevron button to open the dropdown.
+- Dropdown opens on chevron click or appropriate desktop hover.
+- Dropdown stays open when moving the cursor from the trigger into the menu.
+- It closes on Escape, outside click, or navigation.
+- It must never flicker or disappear while navigating the menu.
+- Subtle 200–250ms animation.
+- Highlight the active page.
+
+TABLET/MOBILE:
+- Keep the existing responsive header design.
+- Services expands into a submenu.
+- Use a dedicated accessible toggle.
+- All seven destinations must be reachable by touch.
+- No hover-only navigation.
+- No horizontal overflow.
+
+ACCESSIBILITY:
+- Semantic navigation links.
+- Keyboard-accessible dropdown toggle.
+- Correct aria-expanded and aria-controls states.
+- Visible keyboard focus.
+- Escape-to-close behavior.
+- Appropriate active-link indication.
+
+---
+
+# PART 5 — CONNECT ALL EXISTING SERVICE LINKS
+
+Review the project's existing navigation and service-related components.
+
+Connect the following:
+
+## HOMEPAGE
+
+The existing six service cards or service showcase items must link to their matching detail routes.
+
+The existing Explore All Services link must navigate to:
+/services
+
+Preserve the homepage's existing service card styles, hover effects, photos, and layout.
+
+Only update their destination links.
+
+## MAIN SERVICES OVERVIEW PAGE
+
+Each of the six existing service showcases must navigate to its correct individual service page.
+
+Ensure each Explore Service button uses the canonical route for that service.
+
+Do not redesign the main Services Overview page.
+
+## HEADER
+
+Services label → /services
+
+Services dropdown → six individual routes.
+
+## FOOTER
+
+The existing Services navigation link must point to /services.
+
+If the existing footer contains individual service links, connect them to the exact six corresponding routes without expanding or redesigning the approved minimalist footer.
+
+## SERVICE DETAIL PAGES
+
+Each page must include:
+
+- Breadcrumb to /services
+- View All Services link to /services
+- Consultation CTA linked to the existing functional Contact page or Contact section
+- Existing site header and footer
+
+If the project already has a Contact page, use its established route.
+
+If Contact currently exists only as a homepage section, use the correct homepage hash link.
+
+Do not invent a second contact route or link to a nonexistent form.
+
+---
+
+# PART 6 — ROUTING IMPLEMENTATION
+
+Inspect the existing project's framework and routing architecture before making changes.
+
+Use the established routing system and project conventions.
+
+Do not install an unnecessary additional router.
+
+Implement all seven routes:
+
+/services
+/services/bookkeeping-accounting
+/services/financial-reporting
+/services/payroll
+/services/accounts-payable-receivable
+/services/fractional-cfo
+/services/cloud-accounting
+
+REQUIREMENTS:
+
+- Every direct URL must load the correct page.
+- Browser refresh on a service route must work.
+- Back and forward navigation must work.
+- Internal links must use the application's router where applicable.
+- Preserve the shared navigation and footer.
+- Avoid duplicated page components.
+- Keep service-specific content in a clearly structured data model where practical.
+- Use one reusable service detail template driven by six distinct content configurations.
+- Preserve canonical URLs exactly.
+- Provide correct page metadata, unique title, and meta description for each detail page.
+- Include one H1 per page.
+- Do not introduce an unnecessary redirect or broken route.
+
+---
+
+# PART 7 — QUALITY AND RESPONSIVENESS
+
+DESKTOP:
+- Premium asymmetric layouts.
+- Contained content width approximately 1200px.
+- Sophisticated typography and image placement.
+- Strong negative space.
+- Smooth interactive elements.
+
+TABLET:
+- Adapt column proportions naturally.
+- Maintain balanced typography and image crops.
+
+MOBILE:
+- Stack images and text correctly.
+- Ensure readable H1 and body text.
+- Preserve proper spacing.
+- Functional accordions and tabs.
+- Functional Services submenu.
+- No overflowing images, clipped buttons, or horizontal scrolling.
+
+PERFORMANCE:
+- Optimize imagery.
+- Use lazy loading for below-the-fold images.
+- Prevent major layout shifts.
+- Respect prefers-reduced-motion.
+- Avoid excessive animation libraries if they are not already required.
+
+CONTENT:
+- No fabricated client statistics.
+- No invented qualifications or partnerships.
+- No fake testimonials.
+- No unsupported tax, audit, or statutory compliance promises.
+- Use credible, precise language.
+
+---
+
+# PART 8 — STRICT PRESERVATION
+
+DO NOT:
+- Redesign the homepage.
+- Redesign the Services Overview page.
+- Replace the original logo.
+- Change the custom-cut navigation silhouette.
+- Change global fonts or colors.
+- Replace the existing footer.
+- Modify approved imagery in unrelated sections.
+- Add unrelated services.
+- Create unnecessary pricing packages.
+- Add generic team testimonials.
+- Break the existing Contact form.
+- Add dead navigation destinations.
+
+ONLY:
+1. Build six finished service-detail pages.
+2. Add the existing-header Services dropdown.
+3. Wire up all required service navigation.
+4. Implement necessary reusable components and responsive behavior.
+
+---
+
+# FINAL ACCEPTANCE CHECK
+
+Before finishing, verify:
+
+[ ] All six individual service pages exist and render.
+[ ] All six use the same premium Balentra design system.
+[ ] Every page has genuinely service-specific content.
+[ ] All six pages have appropriate distinct imagery.
+[ ] Every hero, content section, tab, FAQ, and CTA functions correctly.
+[ ] Services dropdown opens and closes properly.
+[ ] The main Services link opens /services.
+[ ] All six dropdown links open their correct pages.
+[ ] All six homepage service links work.
+[ ] All six Services Overview links work.
+[ ] Breadcrumb and View All Services links work.
+[ ] Existing header and footer designs remain unchanged.
+[ ] Direct route refreshes and browser navigation work.
+[ ] All pages are responsive.
+[ ] No console errors or broken links.
+
+FINAL GOAL:
+
+Deliver a complete, beautifully consistent seven-page Services architecture for Balentra: one existing overview page, six new service-detail pages, and fully connected navigation throughout the website.
