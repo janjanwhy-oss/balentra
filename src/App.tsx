@@ -24,15 +24,15 @@ const HOMEPAGE_EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 const PORTRAITS = [
   {
-    src: '/assets/aistudio/portrait_1.jpg',
+    src: '/assets/aistudio/portrait_1.webp',
     alt: 'Senior International Partner portrait',
   },
   {
-    src: '/assets/aistudio/portrait_2.jpg',
+    src: '/assets/aistudio/portrait_2.webp',
     alt: 'Cross-Border Tax Director portrait',
   },
   {
-    src: '/assets/aistudio/portrait_3.jpg',
+    src: '/assets/aistudio/portrait_3.webp',
     alt: 'Audit & Advisory Lead portrait',
   },
 ];
@@ -189,7 +189,7 @@ const DEMO_TESTIMONIALS = [
     company: 'Northline Creative Studio',
     review:
       'Balentra brought a level of structure and clarity to our financial reporting that we had been missing. Having our numbers organized and explained in a straightforward way makes it much easier to plan ahead and focus on growing the business.',
-    image: '/assets/aistudio/testimonial_avatar_1.png',
+    image: '/assets/aistudio/testimonial_avatar_1.webp',
     alt: 'Illustrative sample profile portrait of Sarah Mitchell, Managing Director at Northline Creative Studio',
   },
   {
@@ -199,7 +199,7 @@ const DEMO_TESTIMONIALS = [
     company: 'Meridian Commerce',
     review:
       'What stood out to us was the attention to detail and the clarity of communication. From bookkeeping to financial reporting, the approach felt organized, practical, and tailored to the way our business operates.',
-    image: '/assets/aistudio/testimonial_avatar_2.png',
+    image: '/assets/aistudio/testimonial_avatar_2.webp',
     alt: 'Illustrative sample profile portrait of Omar Khalid, Founder & CEO at Meridian Commerce',
   },
   {
@@ -209,7 +209,7 @@ const DEMO_TESTIMONIALS = [
     company: 'Elevate Digital Group',
     review:
       "Managing our financial processes used to take more time than it should. Balentra's structured approach helped simplify our reporting workflow and gave us a clearer picture of the information we needed to make decisions.",
-    image: '/assets/aistudio/testimonial_avatar_3.png',
+    image: '/assets/aistudio/testimonial_avatar_3.webp',
     alt: 'Illustrative sample profile portrait of Daniel Foster, Operations Director at Elevate Digital Group',
   },
 ];
@@ -601,13 +601,24 @@ export default function App() {
         {/* Background Image Layer with Zero-Broken-Image Resilience */}
         <div className="absolute inset-0 z-0">
           {!imageError ? (
-            <img
-              src="/assets/aistudio/hero_image_design_e8f2459b.jpg"
-              alt="Balentra Accounting executive advisory team in dark architectural interior"
-              referrerPolicy="no-referrer"
-              onError={() => setImageError(true)}
-              className="h-full w-full object-cover object-center scale-[1.01] brightness-[0.88] contrast-[1.08]"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/assets/aistudio/hero_image_design_e8f2459b-768w.webp 768w, /assets/aistudio/hero_image_design_e8f2459b.webp 1376w"
+                sizes="(max-width: 768px) 100vw, 100vw"
+              />
+              <img
+                src="/assets/aistudio/hero_image_design_e8f2459b.jpg"
+                alt="Balentra Accounting executive advisory team in dark architectural interior"
+                referrerPolicy="no-referrer"
+                fetchPriority="high"
+                decoding="async"
+                width={1376}
+                height={768}
+                onError={() => setImageError(true)}
+                className="h-full w-full object-cover object-center scale-[1.01] brightness-[0.88] contrast-[1.08]"
+              />
+            </picture>
           ) : (
             <div className="h-full w-full bg-gradient-to-br from-[#121316] via-[#0B0C0E] to-[#181512]" />
           )}
@@ -2997,9 +3008,13 @@ export default function App() {
                 className="absolute right-[3%] top-[3%] w-[152px] h-[124px] lg:w-[164px] lg:h-[132px] rounded-[20px] overflow-hidden bg-[#141417] shadow-[0_14px_32px_rgba(0,0,0,0.55)] transform-gpu transition-all duration-300 ease-out hover:scale-[1.04] hover:-translate-y-1.5 hover:shadow-[0_22px_48px_rgba(0,0,0,0.8)] z-10"
               >
                 <img
-                  src="/assets/aistudio/cta_calculator_docs.png"
+                  src="/assets/aistudio/cta_calculator_docs.webp"
                   alt="Close-up of calculator and accounting paperwork on desk"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
+                  width={170}
+                  height={138}
                   className="w-full h-full object-cover object-center"
                 />
               </motion.div>
@@ -3010,9 +3025,13 @@ export default function App() {
                 className="absolute left-[23.5%] top-[21%] w-[248px] h-[192px] lg:w-[270px] lg:h-[206px] rounded-[24px] overflow-hidden bg-[#141417] shadow-[0_18px_42px_rgba(0,0,0,0.65)] transform-gpu transition-all duration-300 ease-out hover:scale-[1.035] hover:-translate-y-1.5 hover:shadow-[0_26px_56px_rgba(0,0,0,0.85)] z-20"
               >
                 <img
-                  src="/assets/aistudio/cta_laptop_charts.png"
+                  src="/assets/aistudio/cta_laptop_charts.webp"
                   alt="Laptop displaying financial charts and reports on executive desk"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
+                  width={285}
+                  height={220}
                   className="w-full h-full object-cover object-center"
                 />
               </motion.div>
@@ -3023,9 +3042,13 @@ export default function App() {
                 className="absolute left-[2.5%] bottom-[9%] w-[144px] h-[124px] lg:w-[154px] lg:h-[132px] rounded-[20px] overflow-hidden bg-[#141417] shadow-[0_14px_32px_rgba(0,0,0,0.55)] transform-gpu transition-all duration-300 ease-out hover:scale-[1.04] hover:-translate-y-1.5 hover:shadow-[0_22px_48px_rgba(0,0,0,0.8)] z-10"
               >
                 <img
-                  src="/assets/aistudio/cta_office_building.png"
+                  src="/assets/aistudio/cta_office_building.webp"
                   alt="Modern architectural glass office tower at dusk"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
+                  width={158}
+                  height={136}
                   className="w-full h-full object-cover object-center"
                 />
               </motion.div>
@@ -3043,9 +3066,13 @@ export default function App() {
                 className="absolute right-[0%] bottom-[1%] w-[224px] h-[170px] lg:w-[244px] lg:h-[184px] rounded-[22px] overflow-hidden bg-[#141417] shadow-[0_18px_42px_rgba(0,0,0,0.65)] transform-gpu transition-all duration-300 ease-out hover:scale-[1.035] hover:-translate-y-1.5 hover:shadow-[0_26px_56px_rgba(0,0,0,0.85)] z-20"
               >
                 <img
-                  src="/assets/aistudio/cta_team_meeting.png"
+                  src="/assets/aistudio/cta_team_meeting.webp"
                   alt="Professional business meeting with team reviewing financial reports"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
+                  width={254}
+                  height={192}
                   className="w-full h-full object-cover object-center"
                 />
               </motion.div>
@@ -3065,9 +3092,13 @@ export default function App() {
                     className="h-[110px] flex-1 rounded-[18px] overflow-hidden bg-[#141417] transform-gpu"
                   >
                     <img
-                      src="/assets/aistudio/cta_office_building.png"
+                      src="/assets/aistudio/cta_office_building.webp"
                       alt="Modern architectural glass office tower"
                       referrerPolicy="no-referrer"
+                      loading="lazy"
+                      decoding="async"
+                      width={158}
+                      height={136}
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -3077,9 +3108,13 @@ export default function App() {
                   className="h-[145px] rounded-[20px] overflow-hidden bg-[#141417] transform-gpu"
                 >
                   <img
-                    src="/assets/aistudio/cta_laptop_charts.png"
+                    src="/assets/aistudio/cta_laptop_charts.webp"
                     alt="Laptop displaying financial charts and reports"
                     referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
+                    width={285}
+                    height={220}
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
@@ -3091,9 +3126,13 @@ export default function App() {
                   className="h-[115px] rounded-[18px] overflow-hidden bg-[#141417] transform-gpu"
                 >
                   <img
-                    src="/assets/aistudio/cta_calculator_docs.png"
+                    src="/assets/aistudio/cta_calculator_docs.webp"
                     alt="Close-up of calculator and accounting paperwork"
                     referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
+                    width={170}
+                    height={138}
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
@@ -3102,9 +3141,13 @@ export default function App() {
                   className="h-[135px] rounded-[20px] overflow-hidden bg-[#141417] transform-gpu"
                 >
                   <img
-                    src="/assets/aistudio/cta_team_meeting.png"
+                    src="/assets/aistudio/cta_team_meeting.webp"
                     alt="Business meeting with team reviewing financial reports"
                     referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
+                    width={254}
+                    height={192}
                     className="w-full h-full object-cover"
                   />
                 </motion.div>

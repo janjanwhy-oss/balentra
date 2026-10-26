@@ -985,7 +985,7 @@ export const SERVICE_DETAILS_BY_SLUG: Record<string, ServiceDetailConfig> = {
     heroDescription:
       'Cloud accounting setup and practical workflow improvements to help businesses organize financial data and reduce unnecessary manual processes.',
     heroImage:
-      '/assets/aistudio/Team_collaborating_around_confer__20261026000222__1__1344684c.jpg',
+      '/assets/aistudio/Team_collaborating_around_confer__20261026000222__1__1344684c.webp',
     heroImageAlt:
       'Minimal premium digital finance office with modern laptop, financial software interface, and clean architectural surroundings',
     overviewHeading: 'Build a More Connected Finance Function.',

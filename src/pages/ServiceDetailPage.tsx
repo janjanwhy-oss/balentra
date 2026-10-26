@@ -292,6 +292,10 @@ export function ServiceDetailPage({
                   src={service.heroImage}
                   alt={service.heroImageAlt}
                   referrerPolicy="no-referrer"
+                  fetchPriority="high"
+                  decoding="async"
+                  width={966}
+                  height={966}
                   className="w-full h-full object-cover object-center"
                 />
 
@@ -499,6 +503,9 @@ export function ServiceDetailPage({
                 alt={service.showcaseImageAlt}
                 referrerPolicy="no-referrer"
                 loading="lazy"
+                decoding="async"
+                width={966}
+                height={966}
                 className="w-full h-full object-cover object-center"
               />
 

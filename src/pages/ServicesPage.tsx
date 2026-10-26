@@ -68,7 +68,7 @@ export const SERVICES_SHOWCASE_DATA: ServiceShowcaseItem[] = [
       '/assets/aistudio/Consultant_reviewing_financial_d__20261026001240__1__c45553eb.jpg',
     mainImageAlt:
       'Elegant modern accounting desk with ledger documents, laptop, and a professional working with financial records',
-    detailImage: '/assets/aistudio/cta_calculator_docs.png',
+    detailImage: '/assets/aistudio/cta_calculator_docs.webp',
     detailImageAlt:
       'Close-up of accounting calculator and organized financial ledger documents',
   },
@@ -107,7 +107,7 @@ export const SERVICES_SHOWCASE_DATA: ServiceShowcaseItem[] = [
       '/assets/aistudio/Financial_charts_on_office_desk_20261026001253_11zon_39cfd48b.jpg',
     mainImageAlt:
       'Premium modern office with finance professional reviewing printed financial charts and statements',
-    detailImage: '/assets/aistudio/cta_laptop_charts.png',
+    detailImage: '/assets/aistudio/cta_laptop_charts.webp',
     detailImageAlt:
       'Laptop and printed reports displaying financial performance charts',
   },
@@ -146,7 +146,7 @@ export const SERVICES_SHOWCASE_DATA: ServiceShowcaseItem[] = [
       '/assets/aistudio/Desk_with_payroll_documents_and_20261026001248_11zon_16cb4757.jpg',
     mainImageAlt:
       'Professional HR and finance administration workspace with payroll reports and laptop',
-    detailImage: '/assets/aistudio/about_us_image_2_68f64913.png',
+    detailImage: '/assets/aistudio/about_us_image_2_68f64913.webp',
     detailImageAlt:
       'Finance professional coordinating payroll schedules and documentation',
   },
@@ -185,7 +185,7 @@ export const SERVICES_SHOWCASE_DATA: ServiceShowcaseItem[] = [
       '/assets/aistudio/Consultant_reviewing_tax_documents_20261026001238_11zon_4cde3799.jpg',
     mainImageAlt:
       'Close-up editorial shot of professional invoice processing and payment documents',
-    detailImage: '/assets/aistudio/image_57598ec1.png',
+    detailImage: '/assets/aistudio/image_57598ec1.webp',
     detailImageAlt:
       'Organized accounts payable and receivable review in modern office',
   },
@@ -224,7 +224,7 @@ export const SERVICES_SHOWCASE_DATA: ServiceShowcaseItem[] = [
       '/assets/aistudio/Professionals_discussing_financi__20261026001243__1__a33fe2c9.jpg',
     mainImageAlt:
       'Premium boardroom financial strategy meeting with senior professionals reviewing forecasts',
-    detailImage: '/assets/aistudio/cta_team_meeting.png',
+    detailImage: '/assets/aistudio/cta_team_meeting.webp',
     detailImageAlt:
       'Executive advisory session reviewing financial models and KPIs',
   },
@@ -260,10 +260,10 @@ export const SERVICES_SHOWCASE_DATA: ServiceShowcaseItem[] = [
       'Businesses automating routine invoicing and expense capture',
     ],
     mainImage:
-      '/assets/aistudio/Team_collaborating_around_confer__20261026000222__1__1344684c.jpg',
+      '/assets/aistudio/Team_collaborating_around_confer__20261026000222__1__1344684c.webp',
     mainImageAlt:
       'Modern digital finance workspace with laptop, financial application, and organized office environment',
-    detailImage: '/assets/aistudio/cta_office_building.png',
+    detailImage: '/assets/aistudio/cta_office_building.webp',
     detailImageAlt:
       'Modern connected corporate environment and digital finance operations',
   },
@@ -431,13 +431,24 @@ export function ServicesPage({
         {/* Subtle Cinematic Corporate / Architectural Background Photography */}
         <div className="absolute inset-0 z-0">
           {!heroImageError ? (
-            <img
-              src="/assets/aistudio/hero_image_design_e8f2459b.jpg"
-              alt="Balentra executive financial advisory environment"
-              referrerPolicy="no-referrer"
-              onError={() => setHeroImageError(true)}
-              className="w-full h-full object-cover object-center brightness-[0.42] contrast-[1.08]"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/assets/aistudio/hero_image_design_e8f2459b-768w.webp 768w, /assets/aistudio/hero_image_design_e8f2459b.webp 1376w"
+                sizes="(max-width: 768px) 100vw, 100vw"
+              />
+              <img
+                src="/assets/aistudio/hero_image_design_e8f2459b.jpg"
+                alt="Balentra executive financial advisory environment"
+                referrerPolicy="no-referrer"
+                fetchPriority="high"
+                decoding="async"
+                width={1376}
+                height={768}
+                onError={() => setHeroImageError(true)}
+                className="w-full h-full object-cover object-center brightness-[0.42] contrast-[1.08]"
+              />
+            </picture>
           ) : (
             <div className="w-full h-full bg-[#101114]" />
           )}
@@ -1113,9 +1124,13 @@ export function ServicesPage({
                 className="absolute right-[3%] top-[3%] w-[152px] h-[124px] lg:w-[164px] lg:h-[132px] rounded-[20px] overflow-hidden bg-[#141417] shadow-[0_14px_32px_rgba(0,0,0,0.55)] transform-gpu transition-all duration-300 ease-out hover:scale-[1.04] hover:-translate-y-1.5 hover:shadow-[0_22px_48px_rgba(0,0,0,0.8)] z-10"
               >
                 <img
-                  src="/assets/aistudio/cta_calculator_docs.png"
+                  src="/assets/aistudio/cta_calculator_docs.webp"
                   alt="Close-up of calculator and accounting paperwork on desk"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
+                  width={170}
+                  height={138}
                   className="w-full h-full object-cover object-center"
                 />
               </motion.div>
@@ -1133,9 +1148,13 @@ export function ServicesPage({
                 className="absolute left-[23.5%] top-[21%] w-[248px] h-[192px] lg:w-[270px] lg:h-[206px] rounded-[24px] overflow-hidden bg-[#141417] shadow-[0_18px_42px_rgba(0,0,0,0.65)] transform-gpu transition-all duration-300 ease-out hover:scale-[1.035] hover:-translate-y-1.5 hover:shadow-[0_26px_56px_rgba(0,0,0,0.85)] z-20"
               >
                 <img
-                  src="/assets/aistudio/cta_laptop_charts.png"
+                  src="/assets/aistudio/cta_laptop_charts.webp"
                   alt="Laptop displaying financial charts and reports on executive desk"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
+                  width={285}
+                  height={220}
                   className="w-full h-full object-cover object-center"
                 />
               </motion.div>
@@ -1153,9 +1172,13 @@ export function ServicesPage({
                 className="absolute left-[2.5%] bottom-[9%] w-[144px] h-[124px] lg:w-[154px] lg:h-[132px] rounded-[20px] overflow-hidden bg-[#141417] shadow-[0_14px_32px_rgba(0,0,0,0.55)] transform-gpu transition-all duration-300 ease-out hover:scale-[1.04] hover:-translate-y-1.5 hover:shadow-[0_22px_48px_rgba(0,0,0,0.8)] z-10"
               >
                 <img
-                  src="/assets/aistudio/cta_office_building.png"
+                  src="/assets/aistudio/cta_office_building.webp"
                   alt="Modern architectural glass office tower at dusk"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
+                  width={158}
+                  height={136}
                   className="w-full h-full object-cover object-center"
                 />
               </motion.div>
@@ -1187,9 +1210,13 @@ export function ServicesPage({
                 className="absolute right-[0%] bottom-[1%] w-[224px] h-[170px] lg:w-[244px] lg:h-[184px] rounded-[22px] overflow-hidden bg-[#141417] shadow-[0_18px_42px_rgba(0,0,0,0.65)] transform-gpu transition-all duration-300 ease-out hover:scale-[1.035] hover:-translate-y-1.5 hover:shadow-[0_26px_56px_rgba(0,0,0,0.85)] z-20"
               >
                 <img
-                  src="/assets/aistudio/cta_team_meeting.png"
+                  src="/assets/aistudio/cta_team_meeting.webp"
                   alt="Professional business meeting with team reviewing financial reports"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
+                  width={254}
+                  height={192}
                   className="w-full h-full object-cover object-center"
                 />
               </motion.div>
@@ -1205,18 +1232,26 @@ export function ServicesPage({
                   />
                   <div className="h-[110px] flex-1 rounded-[18px] overflow-hidden bg-[#141417]">
                     <img
-                      src="/assets/aistudio/cta_office_building.png"
+                      src="/assets/aistudio/cta_office_building.webp"
                       alt="Modern architectural glass office tower"
                       referrerPolicy="no-referrer"
+                      loading="lazy"
+                      decoding="async"
+                      width={158}
+                      height={136}
                       className="w-full h-full object-cover"
                     />
                   </div>
                 </div>
                 <div className="h-[145px] rounded-[20px] overflow-hidden bg-[#141417]">
                   <img
-                    src="/assets/aistudio/cta_laptop_charts.png"
+                    src="/assets/aistudio/cta_laptop_charts.webp"
                     alt="Laptop displaying financial charts and reports"
                     referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
+                    width={285}
+                    height={220}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -1225,17 +1260,25 @@ export function ServicesPage({
               <div className="space-y-3.5 pt-3">
                 <div className="h-[115px] rounded-[18px] overflow-hidden bg-[#141417]">
                   <img
-                    src="/assets/aistudio/cta_calculator_docs.png"
+                    src="/assets/aistudio/cta_calculator_docs.webp"
                     alt="Close-up of calculator and accounting paperwork"
                     referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
+                    width={170}
+                    height={138}
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="h-[135px] rounded-[20px] overflow-hidden bg-[#141417]">
                   <img
-                    src="/assets/aistudio/cta_team_meeting.png"
+                    src="/assets/aistudio/cta_team_meeting.webp"
                     alt="Business meeting with team reviewing financial reports"
                     referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
+                    width={254}
+                    height={192}
                     className="w-full h-full object-cover"
                   />
                 </div>
