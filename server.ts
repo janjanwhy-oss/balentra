@@ -1,6 +1,7 @@
 import express from 'express';
 import fs from 'fs/promises';
 import path from 'path';
+import os from 'os';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 
@@ -26,7 +27,7 @@ interface InquiryPayload {
   message?: string;
 }
 
-const INQUIRIES_STORAGE_PATH = path.join('/tmp', 'balentra-inquiries.json');
+const INQUIRIES_STORAGE_PATH = path.join(os.tmpdir(), 'balentra-inquiries.json');
 
 async function saveInquiryRecord(record: Record<string, unknown>) {
   let existing: Record<string, unknown>[] = [];
